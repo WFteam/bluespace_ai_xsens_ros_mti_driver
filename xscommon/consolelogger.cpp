@@ -63,6 +63,7 @@
 //  
 
 #include "consolelogger.h"
+#include <cstring>
 #include <iostream>
 
 /*! \class ConsoleLogger
