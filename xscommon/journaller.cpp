@@ -76,9 +76,14 @@
 #include <xstypes/xstimeinfo.h>
 #include <memory>
 
+#include <unistd.h>
+#define _unlink unlink
+
 #ifndef XSENS_NO_AUTOLIB
 #pragma comment(lib, "psapi.lib")
 #endif
+
+Journaller* gJournal = nullptr;
 
 //! \brief The optional additional logger
 AbstractAdditionalLogger* Journaller::m_additionalLogger = nullptr;

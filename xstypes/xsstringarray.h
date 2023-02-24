@@ -72,6 +72,8 @@
 extern "C" {
 #endif
 
+struct XsStringArray;
+
 extern XsArrayDescriptor const XSTYPES_DLL_API g_xsStringArrayDescriptor;
 
 #ifndef __cplusplus
